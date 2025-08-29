@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SelfStart Global - Маркетинговая стратегия</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .slide-wrapper {
+            width: 90%; 
+            max-width: 1280px; 
+            margin: 0;
+            height: auto; 
+        }
+        
+        @media (min-width: 768px) { 
+            .slide-wrapper {
+                aspect-ratio: 16 / 9; 
+                height: auto; 
+            }
+        }
+        
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-content {
+            flex-grow: 1;
+            padding: clamp(16px, 3.75vw, 48px) clamp(20px, 5vw, 64px);
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: clamp(12px, 1.09vw, 14px);
+            color: #9ca3af;
+            z-index: 30;
+        }
+
+        .text-selfstart-blue { color: #214080; }
+        .bg-selfstart-blue { background-color: #214080; }
+        .border-selfstart-blue { border-color: #214080; }
+        .text-selfstart-orange { color: #FF542C; }
+        .bg-selfstart-orange { background-color: #FF542C; }
+        .border-selfstart-orange { border-color: #FF542C; }
+
+        .section-divider {
+            height: clamp(2px, 0.23vw, 3px);
+            width: clamp(80px, 10vw, 128px);
+            background-color: #FF542C;
+            margin: clamp(8px, 0.93vw, 12px) 0;
+        }
+
+        .text-6xl { font-size: clamp(32px, 4.68vw, 60px); }
+        .text-5xl { font-size: clamp(30px, 3.75vw, 48px); }
+        .text-4xl { font-size: clamp(24px, 2.81vw, 36px); }
+        .text-2xl { font-size: clamp(18px, 1.875vw, 24px); }
+        .text-xl { font-size: clamp(16px, 1.56vw, 20px); }
+        .text-lg { font-size: clamp(15px, 1.4vw, 18px); }
+        .text-base { font-size: clamp(14px, 1.25vw, 16px); }
+        .text-sm { font-size: clamp(12px, 1.09vw, 14px); }
+        .text-xs { font-size: clamp(10px, 0.93vw, 12px); }
+
+        @media print {
+            @page {
+                size: A4 landscape; 
+                margin: 0;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                gap: 0;
+                background-color: #ffffff; 
+            }
+            .slide-wrapper {
+                page-break-after: always; 
+                width: 100vw;
+                height: 100vh;
+                max-width: none;
+                aspect-ratio: unset; 
+                box-shadow: none; 
+                border: none;
+                margin: 0;
+                display: block; 
+            }
+            .slide-wrapper:last-child {
+                page-break-after: auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-wrapper">
+        <div class="slide-container flex flex-col justify-between p-12">
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 50px; right: 100px; font-size: 180px;"><i class="fas fa-graduation-cap"></i></div>
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 80px; left: 120px; font-size: 160px;"><i class="fas fa-globe-americas"></i></div>
+
+            <div class="flex justify-center items-center pt-6 z-10">
+                <div class="flex items-center bg-white p-4 rounded-lg shadow-lg">
+                    <img src="https://page.gensparksite.com/get_upload_url/c831165d3b9ff09a3f89ec0ce827902f1ceedd949decfedbf77bdbe3389c7e91/default/0ee7d5c7-d0e6-40a0-a7eb-c9ce9bc19c44" alt="SelfStart Global Logo" style="max-width: 300px; height: auto;">
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center text-center z-10 my-12">
+                <h1 class="text-5xl font-bold text-selfstart-blue mb-6">Маркетинговая стратегия и ответы на тестовое задание</h1>
+                <div class="w-32 h-1 bg-selfstart-orange my-4"></div>
+                <h2 class="text-2xl text-gray-600 mt-4">Подготовлено для команды SelfStart Global</h2>
+            </div>
+
+            <div class="flex justify-between items-end z-10">
+                <div class="text-gray-600">
+                    <p class="text-lg"><span class="font-semibold">Дата:</span> 29.08.2025</p>
+                </div>
+                <div class="border-l-4 border-selfstart-orange pl-6 py-2">
+                    <p class="text-xl font-bold text-selfstart-blue">Александр Сухомлин</p>
+                    <p class="text-gray-600 mb-1">Кандидат на позицию Маркетолога</p>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full h-4 bg-selfstart-blue"></div>
+            <div class="page-number">1 / 11</div>
+        </div>
+    </div>
+
+    <div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 20px; right: 80px; font-size: 160px;"><i class="fas fa-chart-line"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 60px; left: 100px; font-size: 140px;"><i class="fas fa-lightbulb"></i></div>
+        
+        <div class="z-10 mb-6">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Стратегический подход: От данных к результату</h1>
+            </div>
+            <div class="section-divider mt-4 mb-2"></div>
+        </div>
+
+        <div class="mb-4 z-10">
+            <h2 class="text-2xl font-bold text-selfstart-orange">Эффективная стратегия начинается с правильных вопросов</h2>
+            <p class="text-xl text-gray-600 mt-2">Прежде чем инвестировать, мы должны понимать, как будем измерять успех.</p>
+        </div>
+        
+        <div class="z-10 mt-3 space-y-4">
+            <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-bullseye text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Бизнес-цели:</p><p class="text-gray-700">На чем фокусируемся в этом квартале? (Количество контрактов, стоимость привлечения клиента (CAC), ROMI?)</p></div></div>
+            <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-calculator text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Unit-экономика:</p><p class="text-gray-700">Какова средняя стоимость услуги и LTV клиента? (Это определяет, сколько мы можем платить за его привлечение)</p></div></div>
+            <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-user-check text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Определение Лида:</p><p class="text-gray-700">Кого мы считаем целевым лидом для отдела продаж? <span class="text-selfstart-orange font-semibold">(Предлагаю считать лидом заявку на бесплатную консультацию)</span></p></div></div>
+            <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-route text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Customer Journey (Путь клиента):</p><p class="text-gray-700">Сколько времени в среднем проходит от первого контакта до подписания договора?</p></div></div>
+            <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-chart-pie text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Атрибуция:</p><p class="text-gray-700">Настроена ли аналитика для отслеживания "отложенных" конверсий?</p></div></div>
+        </div>
+        
+        <div class="mt-auto p-4 bg-gray-100 border-l-4 border-selfstart-orange z-10">
+            <p class="text-lg font-semibold text-selfstart-blue">Ответы на эти вопросы превращают маркетинг из "затрат" в "прогнозируемую инвестицию".</p>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">2 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 30px; right: 100px; font-size: 150px;"><i class="fas fa-university"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 70px; left: 120px; font-size: 130px;"><i class="fas fa-book-open"></i></div>
+        
+        <div class="z-10 mb-4">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">SWOT-анализ: Наши точки опоры и зоны роста</h1>
+            </div>
+            <div class="section-divider mt-4 mb-2"></div>
+            <p class="text-base text-gray-600 mt-2">На основе анализа сайта и социальных сетей, определены ключевые факторы, влияющие на бизнес:</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 z-10">
+            <div class="relative bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-selfstart-blue"><div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-selfstart-blue"><i class="fas fa-star"></i></div><h2 class="text-2xl font-bold text-selfstart-blue mb-3" style="margin-left: 3rem;">Сильные стороны</h2><ul class="list-disc pl-6 space-y-2 text-sm"><li><span class="font-semibold">Мощный личный бренд</span> и доверие аудитории</li><li><span class="font-semibold">Огромный социальный актив:</span> 54,000+ в Instagram и 16,000+ в Telegram</li><li><span class="font-semibold">Сильный оффер с гарантиями</span> вступления с первого раза</li><li><span class="font-semibold">Убедительное социальное доказательство</span> (кейсы успешных поступлений со стипендиями)</li></ul></div>
+            <div class="relative bg-red-50 p-6 rounded-lg shadow-md border-t-4 border-selfstart-orange"><div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-selfstart-orange"><i class="fas fa-exclamation"></i></div><h2 class="text-2xl font-bold text-selfstart-orange mb-3" style="margin-left: 3rem;">Слабые стороны</h2><ul class="list-disc pl-6 space-y-2 text-sm"><li><span class="font-semibold">Критическая зависимость</span> от одного канала (Instagram) и одного человека</li><li><span class="font-semibold">Сложность масштабирования</span> текущей бизнес-модели</li><li><span class="font-semibold">Отсутствие продуктовой матрицы</span> для более широкой аудитории</li></ul></div>
+            <div class="relative bg-green-50 p-6 rounded-lg shadow-md border-t-4 border-green-600"><div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-green-600"><i class="fas fa-lightbulb"></i></div><h2 class="text-2xl font-bold text-green-600 mb-3" style="margin-left: 3rem;">Возможности</h2><ul class="list-disc pl-6 space-y-2 text-sm"><li><span class="font-semibold">Диверсификация каналов:</span> Построение системного трафика из Google Ads, TikTok и SEO</li><li><span class="font-semibold">Создание продуктовой экосистемы:</span> Запуск низкочекового приложения для монетизации и "прогрева" аудитории</li><li><span class="font-semibold">Систематизация маркетинга,</span> не зависящего от личности основателя</li></ul></div>
+            <div class="relative bg-yellow-50 p-6 rounded-lg shadow-md border-t-4 border-yellow-600"><div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-yellow-600"><i class="fas fa-bolt"></i></div><h2 class="text-2xl font-bold text-yellow-600 mb-3" style="margin-left: 3rem;">Угрозы</h2><ul class="list-disc pl-6 space-y-2 text-sm"><li><span class="font-semibold">Изменения в алгоритмах</span> социальных сетей</li><li><span class="font-semibold">"Выгорание" личного бренда</span> основателя</li><li><span class="font-semibold">Усиление конкуренции</span> на рынке образовательных услуг</li></ul></div>
+        </div>
+        
+        <div class="mt-auto pt-4">
+             <div class="p-4 bg-gray-100 border-l-4 border-selfstart-blue z-10">
+                <p class="text-base text-gray-700">Понимание этих факторов позволит нам разработать <span class="font-semibold text-selfstart-blue">стратегию, опирающуюся на сильные стороны</span> и минимизирующую риски.</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">3 / 11</div>
+    </div>
+</div>
+	
+	<div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 30px; right: 100px; font-size: 150px;"><i class="fas fa-graduation-cap"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 70px; left: 120px; font-size: 130px;"><i class="fas fa-user-graduate"></i></div>
+        
+        <div class="z-10 mb-4">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Наши клиенты: Три ключевых аватара</h1>
+            </div>
+            <div class="section-divider mt-4 mb-2"></div>
+            <p class="text-lg text-gray-600 mt-2">Мы работаем не с абстрактными "абитуриентами", а с тремя четкими сегментами, у каждого из которых свои боли и потребности.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 z-10">
+            <div class="relative bg-blue-50 p-4 rounded-lg shadow-md border-t-4 border-selfstart-blue">
+                <div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-selfstart-blue"><i class="fas fa-child"></i></div>
+                <div class="flex flex-col ml-14 -mt-1">
+                    <h2 class="text-xl font-bold text-selfstart-blue">Амбициозный абитуриент</h2>
+                    <p class="text-base text-gray-700 font-semibold mb-2 flex items-center mt-0.5"><i class="fas fa-birthday-cake mr-2 text-selfstart-orange"></i>16-22 года</p>
+                </div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-selfstart-blue mb-1">Боли:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Страх ошибиться при поступлении</li><li>Непонимание процесса подготовки</li><li>Давление дедлайнов</li><li>Страх не оправдать ожидания</li></ul></div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-selfstart-blue mb-1">Потребности:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Четкий пошаговый план</li><li>Уверенность в результате</li><li>Истории успеха сверстников</li><li>Наставничество</li></ul></div>
+                <div><h3 class="text-base font-semibold text-selfstart-blue mb-1">Где искать:</h3><div class="flex flex-wrap gap-2 mt-1"><span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full flex items-center text-xs"><i class="fab fa-instagram mr-1"></i>Instagram</span><span class="px-2 py-1 bg-black text-white rounded-full flex items-center text-xs"><i class="fab fa-tiktok mr-1"></i>TikTok</span><span class="px-2 py-1 bg-red-100 text-red-800 rounded-full flex items-center text-xs"><i class="fab fa-youtube mr-1"></i>YouTube</span></div></div>
+            </div>
+
+            <div class="relative bg-indigo-50 p-4 rounded-lg shadow-md border-t-4 border-indigo-600">
+                <div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-indigo-600"><i class="fas fa-briefcase"></i></div>
+                <div class="flex flex-col ml-14 -mt-1">
+                    <h2 class="text-xl font-bold text-indigo-600">Карьерный рост</h2>
+                    <p class="text-base text-gray-700 font-semibold mb-2 flex items-center mt-0.5"><i class="fas fa-birthday-cake mr-2 text-selfstart-orange"></i>22-30 лет</p>
+                </div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-indigo-600 mb-1">Боли:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Нехватка времени на подготовку</li><li>Совмещение работы и поступления</li><li>Потребность в эффективности</li><li>Необходимость делегирования</li></ul></div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-indigo-600 mb-1">Потребности:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Максимальная эффективность</li><li>Экономия времени</li><li>Экспертное делегирование</li><li>Помощь с документами</li></ul></div>
+                <div><h3 class="text-base font-semibold text-indigo-600 mb-1">Где искать:</h3><div class="flex flex-wrap gap-2 mt-1"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full flex items-center text-xs"><i class="fab fa-linkedin mr-1"></i>LinkedIn</span><span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-full flex items-center text-xs"><i class="fab fa-google mr-1"></i>Google</span><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full flex items-center text-xs"><i class="fab fa-facebook mr-1"></i>FB Группы</span></div></div>
+            </div>
+
+            <div class="relative bg-green-50 p-4 rounded-lg shadow-md border-t-4 border-green-600">
+                <div class="absolute top-[-20px] left-5 w-10 h-10 rounded-full flex items-center justify-center text-white bg-green-600"><i class="fas fa-users"></i></div>
+                <div class="flex flex-col ml-14 -mt-1">
+                    <h2 class="text-xl font-bold text-green-600">Заботливые родители</h2>
+                    <p class="text-base text-gray-700 font-semibold mb-2 flex items-center mt-0.5"><i class="fas fa-birthday-cake mr-2 text-selfstart-orange"></i>40-55 лет</p>
+                </div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-green-600 mb-1">Боли:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Беспокойство за будущее ребенка</li><li>Недоверие к самостоятельности</li><li>Страх мошенничества</li><li>Финансовые опасения</li></ul></div>
+                <div class="mb-2"><h3 class="text-base font-semibold text-green-600 mb-1">Потребности:</h3><ul class="list-disc pl-5 space-y-1 text-sm"><li>Железные гарантии в договоре</li><li>Надежность и прозрачность</li><li>Финансовая выгода (стипендии)</li><li>Регулярные отчеты</li></ul></div>
+                <div><h3 class="text-base font-semibold text-green-600 mb-1">Где искать:</h3><div class="flex flex-wrap gap-2 mt-1"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full flex items-center text-xs"><i class="fab fa-facebook mr-1"></i>Facebook</span><span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-full flex items-center text-xs"><i class="fab fa-google mr-1"></i>Google</span><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full flex items-center text-xs"><i class="fas fa-comment mr-1"></i>Рекомендации</span></div></div>
+            </div>
+        </div>
+        
+        <div class="mt-auto pt-4">
+            <div class="p-4 bg-gray-100 border-l-4 border-selfstart-blue z-10">
+                <p class="text-lg text-gray-700">Понимание специфики каждого сегмента позволяет создавать <span class="font-semibold text-selfstart-blue">точечные рекламные сообщения</span> с максимально эффективной конверсией.</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">4 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 40px; right: 100px; font-size: 180px;"><i class="fas fa-clipboard-check"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 80px; left: 120px; font-size: 140px;"><i class="fas fa-funnel-dollar"></i></div>
+
+        <div class="z-10 mb-8">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Фундамент для масштабирования: Аудит готовности к трафику</h1>
+            </div>
+            <div class="w-32 h-1 bg-selfstart-orange mt-4 mb-2"></div>
+        </div>
+        
+        <div class="mb-8 z-10">
+            <h2 class="text-2xl font-bold text-selfstart-orange">Готов ли наш сайт принимать дорогой трафик?</h2>
+        </div>
+        
+        <div class="z-10 mt-3">
+            <p class="text-lg text-gray-700 mb-5">Чтобы максимизировать ROI от каждой рекламной кампании, необходимо провести технический и маркетинговый аудит сайта.</p>
+            <h3 class="text-xl font-bold text-selfstart-blue mb-4">Ключевые точки проверки:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-tachometer-alt text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Скорость загрузки:</p><p class="text-gray-700">Медленный сайт "убивает" конверсию, особенно с мобильных устройств. Пользователи не будут ждать.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-laptop text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Четкий первый экран:</p><p class="text-gray-700">Понимает ли посетитель за 3 секунды, какую проблему он здесь решит и почему должен доверять именно вам?</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-route text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Конверсионный путь (User Path):</p><p class="text-gray-700">Есть ли на сайте очевидные и заметные призывы к действию (CTA)? Легко ли пользователю оставить заявку?</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-chart-line text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Аналитика:</p><p class="text-gray-700">Корректно ли настроены цели в Google Analytics 4 для отслеживания всех ключевых действий?</p></div></div>
+            </div>
+        </div>
+        
+        <div class="mt-auto pt-4">
+            <div class="p-4 bg-gray-100 border-l-4 border-selfstart-orange z-10">
+                <p class="text-lg font-semibold text-selfstart-blue">Рекомендация: <span class="text-selfstart-orange">Перед запуском масштабных кампаний в Google Ads, приоритезировать оптимизацию сайта для повышения его конверсионной способности.</span></p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">5 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 20px; right: 80px; font-size: 160px;"><i class="fas fa-globe"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 60px; left: 100px; font-size: 140px;"><i class="fas fa-graduation-cap"></i></div>
+
+        <div class="z-10 mb-4">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Стратегические активы: Игра вдолгую</h1>
+            </div>
+            <div class="w-32 h-1 bg-selfstart-orange mt-4 mb-2"></div>
+        </div>
+
+        <div class="mb-4 z-10">
+            <h2 class="text-xl font-bold text-selfstart-orange">Построение бренда, который невозможно скопировать</h2>
+            <p class="text-lg text-gray-600 mt-1">Параллельно с платным трафиком, который дает результат "здесь и сейчас", мы должны инвестировать время в создание долгосрочных активов. Они будут генерировать трафик и доверие годами.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 z-10 mt-3">
+            <div class="p-4 border border-gray-200 rounded-lg bg-white shadow-sm"><div class="flex items-center mb-3"><div class="w-14 h-14 rounded-full bg-red-500 flex-shrink-0 flex items-center justify-center text-white mr-4"><i class="fab fa-youtube text-2xl"></i></div><h3 class="text-xl font-bold text-selfstart-blue">YouTube</h3></div><div class="border-t pt-2"><p class="text-lg font-semibold text-selfstart-blue mb-1">Цель:</p><p class="text-gray-700 text-sm mb-2">Стать главным образовательным хабом №1 в нише.</p><p class="text-lg font-semibold text-selfstart-blue mb-1">План действий:</p><ul class="list-disc pl-5 text-sm text-gray-700 space-y-1"><li>Создать 10 фундаментальных, evergreen-видео на самые популярные темы</li><li>Продвигать органически через качественный контент</li><li>SEO-оптимизация видео и описаний</li></ul></div></div>
+            <div class="p-4 border border-gray-200 rounded-lg bg-white shadow-sm"><div class="flex items-center mb-3"><div class="w-14 h-14 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-4"><i class="fas fa-search text-2xl"></i></div><h3 class="text-xl font-bold text-selfstart-blue">SEO (Блог на сайте)</h3></div><div class="border-t pt-2"><p class="text-lg font-semibold text-selfstart-blue mb-1">Цель:</p><p class="text-gray-700 text-sm mb-2">Захватить ТОП-позиции в Google по ключевым коммерческим и информационным запросам.</p><p class="text-lg font-semibold text-selfstart-blue mb-1">План действий:</p><ul class="list-disc pl-5 text-sm text-gray-700 space-y-1"><li>Регулярно создавать экспертные статьи</li><li>Оптимизировать контент для поисковых систем</li><li>Стабильный источник самых "теплых" лидов</li></ul></div></div>
+            <div class="p-4 border border-gray-200 rounded-lg bg-white shadow-sm"><div class="flex items-center mb-3"><div class="w-14 h-14 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white mr-4"><i class="fab fa-linkedin-in text-2xl"></i></div><h3 class="text-xl font-bold text-selfstart-blue">LinkedIn</h3></div><div class="border-t pt-2"><p class="text-lg font-semibold text-selfstart-blue mb-1">Цель:</p><p class="text-gray-700 text-sm mb-2">Позиционировать основателя и компанию как ведущих экспертов для сегмента "Карьерный рост".</p><p class="text-lg font-semibold text-selfstart-blue mb-1">План действий:</p><ul class="list-disc pl-5 text-sm text-gray-700 space-y-1"><li>Регулярный постинг экспертного контента</li><li>Публикация успешных кейсов</li><li>Создание профессионального комьюнити</li></ul></div></div>
+        </div>
+        
+        <div class="mt-auto pt-4">
+            <div class="p-4 bg-gray-100 border-l-4 border-selfstart-orange z-10">
+                <p class="text-lg font-semibold text-selfstart-blue">Эти активы будут приносить результат годами после создания. Инвестиции, а не расходы.</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">6 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+        <div class="slide-container p-12">
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 30px; right: 100px; font-size: 150px;"><i class="fas fa-chart-line"></i></div>
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 70px; left: 120px; font-size: 130px;"><i class="fas fa-euro-sign"></i></div>
+
+            <div class="z-10 mb-4">
+                <div class="flex items-center">
+                    <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                    <h1 class="text-4xl font-bold text-selfstart-blue">План распределения бюджета €10,000</h1>
+                </div>
+                <div class="section-divider mt-4 mb-2"></div>
+            </div>
+
+            <div class="rounded-lg shadow-md z-10">
+                <div class="grid grid-cols-10 table-header p-3 font-bold text-selfstart-blue text-sm"><div class="col-span-3">Канал</div><div class="col-span-1">Бюджет</div><div class="col-span-4">Обоснование и цели</div><div class="col-span-2">Ожидаемые KPI</div></div>
+                <div class="grid grid-cols-10 p-2 border-b items-center text-sm"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-pink-600 flex items-center justify-center text-white mr-2"><i class="fab fa-instagram"></i></div><span class="font-semibold">Instagram Ads</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€4,000</span></div><div class="col-span-4 text-xs">Масштабирование основного актива. Ретаргетинг на 54k+ подписчиков.</div><div class="col-span-2 text-xs"><span class="font-semibold">Лиды:</span> 100-130<br><span class="font-semibold">CPL:</span> ~€20-€40</div></div>
+                <div class="grid grid-cols-10 p-2 border-b items-center text-sm bg-gray-50"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-selfstart-blue flex items-center justify-center text-white mr-2"><i class="fab fa-google"></i></div><span class="font-semibold">Google Ads</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€2,000</span></div><div class="col-span-4 text-xs">"Горячие" клиенты с уже сформированным спросом. Запуск после оптимизации сайта.</div><div class="col-span-2 text-xs"><span class="font-semibold">Лиды:</span> 30-40<br><span class="font-semibold">CPL:</span> ~€40-€60</div></div>
+                <div class="grid grid-cols-10 p-2 border-b items-center text-sm"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-black flex items-center justify-center text-white mr-2"><i class="fab fa-tiktok"></i></div><span class="font-semibold">TikTok Ads</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€1,000</span></div><div class="col-span-4 text-xs">Охват молодой аудитории. Тестирование креативов для сегмента "Абитуриент".</div><div class="col-span-2 text-xs"><span class="font-semibold">Лиды:</span> 20-30<br><span class="font-semibold">Охват:</span> 500,000+</div></div>
+                <div class="grid grid-cols-10 p-2 border-b items-center text-sm bg-gray-50"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-green-600 flex items-center justify-center text-white mr-2"><i class="fas fa-search"></i></div><span class="font-semibold">SEO и сайт</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€1,000</span></div><div class="col-span-4 text-xs">Аудит, написание SEO-статей, улучшение конверсии сайта.</div><div class="col-span-2 text-xs"><span class="font-semibold">Конверсия:</span> +1-2%</div></div>
+                <div class="grid grid-cols-10 p-2 border-b items-center text-sm"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-red-600 flex items-center justify-center text-white mr-2"><i class="fab fa-youtube"></i></div><span class="font-semibold">YouTube</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€1,000</span></div><div class="col-span-4 text-xs">Съемка и монтаж 2-5 фундаментальных экспертных видео.</div><div class="col-span-2 text-xs"><span class="font-semibold">Эффект:</span> органический рост</div></div>
+                <div class="grid grid-cols-10 p-2 items-center text-sm bg-gray-50"><div class="col-span-3 flex items-center"><div class="w-8 h-8 rounded-full flex-shrink-0 bg-selfstart-orange flex items-center justify-center text-white mr-2"><i class="fas fa-handshake"></i></div><span class="font-semibold">Партнерства</span></div><div class="col-span-1"><span class="px-2 py-1 bg-selfstart-blue text-white rounded-full text-xs font-bold">€1,000</span></div><div class="col-span-4 text-xs">Коллаборации с блогерами, языковыми школами, репетиторами.</div><div class="col-span-2 text-xs"><span class="font-semibold">Лиды:</span> 25-50</div></div>
+            </div>
+
+            <div class="mt-auto p-4 bg-gray-100 border-l-4 border-selfstart-blue z-10">
+                <p class="text-lg text-gray-700"><span class="font-semibold text-selfstart-blue">Итого:</span> Прогноз по лидам – 175-250 заявок при среднем CPL €40-€57.</p>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+            <div class="page-number">7 / 11</div>
+        </div>
+    </div>
+	
+	<div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 30px; right: 100px; font-size: 170px;"><i class="fas fa-mobile-alt"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 80px; left: 120px; font-size: 150px;"><i class="fas fa-rocket"></i></div>
+        
+        <div class="z-10 mb-6">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Стратегия продвижения приложения (Вопрос 2)</h1>
+            </div>
+            <div class="w-32 h-1 bg-selfstart-orange mt-4 mb-2"></div>
+        </div>
+
+        <div class="mb-4 z-10">
+            <h2 class="text-xl font-bold text-selfstart-orange">Стратегический шаг: от услуги к продукту</h2>
+            <p class="text-lg text-gray-600 mt-1">Запуск приложения — это гениальное решение для масштабирования бизнеса и монетизации широкой аудитории, которая следит за вами, но не готова купить основную услугу.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg mb-4 z-10">
+            <h3 class="font-bold text-xl text-selfstart-blue mb-3">Почему это сработает?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="flex items-start"><div class="w-10 h-10 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-tag text-sm"></i></div><div><p class="font-bold text-selfstart-blue text-base">Низкий порог входа</p><p class="text-gray-600 text-sm">$19.99 - импульсивная покупка для целевой аудитории</p></div></div>
+                <div class="flex items-start"><div class="w-10 h-10 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-globe text-sm"></i></div><div><p class="font-bold text-selfstart-blue text-base">Массовый охват</p><p class="text-gray-600 text-sm">Возможность продавать тысячам клиентов по всему миру</p></div></div>
+                <div class="flex items-start"><div class="w-10 h-10 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-funnel-dollar text-sm"></i></div><div><p class="font-bold text-selfstart-blue text-base">Автоматизированная воронка</p><p class="text-gray-600 text-sm">Прогревающий этап перед продажей основного продукта</p></div></div>
+            </div>
+        </div>
+
+        <div class="z-10">
+            <h3 class="font-bold text-xl text-selfstart-blue mb-3">План запуска SelfStart app:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-4 border-l-4 border-selfstart-orange bg-gray-50 rounded-r-lg"><div class="flex items-center mb-3"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-hourglass-start text-xl"></i></div><h4 class="text-lg font-bold text-selfstart-blue">Пре-лонч (2 недели)</h4></div><ul class="list-disc pl-6 text-sm text-gray-700 space-y-1"><li>Создание ажиотажа в Instagram</li><li>Показ "закулисья" разработки</li><li>Сбор "waitlist" с предложением скидки 50% в день запуска</li></ul></div>
+                <div class="p-4 border-l-4 border-selfstart-orange bg-gray-50 rounded-r-lg"><div class="flex items-center mb-3"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-rocket text-xl"></i></div><h4 class="text-lg font-bold text-selfstart-blue">Запуск (1 неделя)</h4></div><ul class="list-disc pl-6 text-sm text-gray-700 space-y-1"><li>Проведение большого вебинара с презентацией приложения</li><li>Массированная рекламная кампания в Instagram</li><li>Рассылка по базе подписчиков</li></ul></div>
+                <div class="p-4 border-l-4 border-selfstart-orange bg-gray-50 rounded-r-lg"><div class="flex items-center mb-3"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-3"><i class="fas fa-chart-line text-xl"></i></div><h4 class="text-lg font-bold text-selfstart-blue">Пост-лонч (постоянно)</h4></div><ul class="list-disc pl-6 text-sm text-gray-700 space-y-1"><li>Встроенный в приложение Upsell на дорогие услуги</li><li>ASO-оптимизация для органических загрузок</li><li>Освещение успехов пользователей в соцсетях</li></ul></div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">8 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+    <div class="slide-container p-12">
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 30px; right: 100px; font-size: 150px;"><i class="fas fa-users-cog"></i></div>
+        <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 70px; left: 120px; font-size: 130px;"><i class="fas fa-chart-line"></i></div>
+
+        <div class="z-10 mb-4">
+            <div class="flex items-center">
+                <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                <h1 class="text-4xl font-bold text-selfstart-blue">Команда маркетинга: основные роли (Вопрос 3)</h1>
+            </div>
+            <div class="w-32 h-1 bg-selfstart-orange mt-4 mb-2"></div>
+            <p class="text-base text-gray-600 mt-2">Моя философия — держать в штате стратегию и бренд, а техническую экспертизу привлекать на аутсорсе. Это дает гибкость и доступ к лучшим талантам.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 z-10">
+            <div class="relative bg-blue-50 p-4 rounded-lg shadow-md border-t-4 border-selfstart-blue">
+                <div class="flex items-center mb-3">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white bg-selfstart-blue flex-shrink-0"><i class="fas fa-building"></i></div>
+                    <h2 class="text-2xl font-bold text-selfstart-blue ml-4">В ШТАТЕ (In-house)</h2>
+                </div>
+                <div class="space-y-3">
+                    <div class="p-3 bg-white rounded-lg shadow-sm"><h3 class="text-lg font-bold text-selfstart-blue mb-2">Marketing Lead (я)</h3><p class="text-gray-700 mb-2 text-sm"><i class="fas fa-check-circle text-selfstart-orange mr-2"></i> <span class="font-semibold">Почему:</span> Стратегия, управление бюджетом и анализ — это сердце маркетинга, которое нельзя отдавать наружу.</p><p class="text-gray-600 italic text-xs">Обеспечивает единое видение развития и отвечает за все результаты маркетинга.</p></div>
+                    <div class="p-3 bg-white rounded-lg shadow-sm"><h3 class="text-lg font-bold text-selfstart-blue mb-2">SMM / Content Manager</h3><p class="text-gray-700 mb-2 text-sm"><i class="fas fa-check-circle text-selfstart-orange mr-2"></i> <span class="font-semibold">Почему:</span> Этот человек — "голос бренда" и правая рука основателя. Он должен жить компанией, чтобы создавать аутентичный контент.</p><p class="text-gray-600 italic text-xs">Ежедневно взаимодействует с аудиторией, знает все нюансы тона и ценностей бренда.</p></div>
+                </div>
+            </div>
+            <div class="relative bg-orange-50 p-4 rounded-lg shadow-md border-t-4 border-selfstart-orange">
+                <div class="flex items-center mb-3">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white bg-selfstart-orange flex-shrink-0"><i class="fas fa-handshake"></i></div>
+                    <h2 class="text-2xl font-bold text-selfstart-orange ml-4">НА АУТСОРС</h2>
+                </div>
+                <div class="space-y-2">
+                    <div class="p-3 bg-white rounded-lg shadow-sm"><h3 class="text-lg font-bold text-selfstart-orange mb-2">Performance Marketing Specialist</h3><p class="text-gray-700 mb-2 text-sm"><i class="fas fa-check-circle text-selfstart-blue mr-2"></i> <span class="font-semibold">Почему:</span> Узкая техническая специализация. Агентство или фрилансер с опытом в образовательной нише дадут лучший результат за меньшие деньги, чем штатный сотрудник.</p></div>
+                    <div class="p-3 bg-white rounded-lg shadow-sm"><h3 class="text-lg font-bold text-selfstart-orange mb-2">SEO-специалист</h3><p class="text-gray-700 mb-2 text-sm"><i class="fas fa-check-circle text-selfstart-blue mr-2"></i> <span class="font-semibold">Почему:</span> Работа может быть проектной (аудит, стратегия) или на частичном retainer. Если SEO станет ключевым приоритетом на 1-2 года, можно рассмотреть перевод в штат.</p></div>
+                    <div class="p-3 bg-white rounded-lg shadow-sm"><h3 class="text-lg font-bold text-selfstart-orange mb-2">Видеограф / Монтажер, Дизайнер</h3><p class="text-gray-700 mb-2 text-sm"><i class="fas fa-check-circle text-selfstart-blue mr-2"></i> <span class="font-semibold">Почему:</span> Проектная работа. Привлекаются под конкретные задачи (съемка видео, создание креативов), что намного выгоднее.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+        <div class="page-number">9 / 11</div>
+    </div>
+</div>
+
+    <div class="slide-wrapper">
+        <div class="slide-container p-12">
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 20px; right: 80px; font-size: 160px;"><i class="fas fa-graduation-cap"></i></div>
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 60px; left: 100px; font-size: 140px;"><i class="fas fa-globe"></i></div>
+
+            <div class="z-10 mb-6">
+                <div class="flex items-center">
+                    <div class="w-3 h-12 bg-selfstart-orange mr-4"></div>
+                    <h1 class="text-4xl font-bold text-selfstart-blue">Моя экспертиза – как я усилю SelfStart Global</h1>
+                </div>
+                <div class="section-divider mt-4 mb-2"></div>
+            </div>
+
+            <div class="mb-5 z-10">
+                <h2 class="text-2xl font-bold text-selfstart-orange">Ваша команда получит синергию маркетинговой экспертизы и ориентации на результат</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 z-10 mt-3">
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-chess text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Стратегический маркетинг</p><p class="text-gray-700">Разработка стратегий, основанных на анализе данных, а не на интуиции.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-ad text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Performance Marketing</p><p class="text-gray-700">Эффективное управление рекламными бюджетами с фокусом на ROMI.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-chart-line text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Аналитика и оптимизация</p><p class="text-gray-700">Настройка аналитики для принятия обоснованных решений.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-search text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">SEO и Контент-маркетинг</p><p class="text-gray-700">Опыт в выводе сайтов в ТОП Google для органического трафика.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-robot text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Автоматизация воронок</p><p class="text-gray-700">Создание воронок и чат-ботов для квалификации лидов 24/7.</p></div></div>
+                <div class="flex items-start"><div class="w-12 h-12 rounded-full bg-selfstart-blue flex-shrink-0 flex items-center justify-center text-white mr-5"><i class="fas fa-laptop-code text-xl"></i></div><div><p class="font-bold text-lg text-selfstart-blue">Создание сайтов</p><p class="text-gray-700">Понимание, как создавать конверсионные сайты, которые продают.</p></div></div>
+            </div>
+            
+            <div class="mt-auto p-4 bg-gray-100 border-l-4 border-selfstart-orange z-10">
+                <p class="text-lg font-semibold text-selfstart-blue">Мой подход: системность, аналитика и опора на данные при принятии решений.</p>
+            </div>
+
+            <div class="absolute bottom-0 left-0 w-full h-2 bg-selfstart-blue"></div>
+            <div class="page-number">10 / 11</div>
+        </div>
+    </div>
+
+    <div class="slide-wrapper">
+        <div class="slide-container flex flex-col p-12">
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; top: 50px; right: 120px; font-size: 180px;"><i class="fas fa-award"></i></div>
+            <div class="icon-education text-selfstart-blue" style="position:absolute; opacity: 0.05; z-index: 0; bottom: 70px; left: 100px; font-size: 160px;"><i class="fas fa-graduation-cap"></i></div>
+
+            <div class="z-10 mt-6 mb-4 text-center">
+                <h1 class="text-6xl font-bold text-selfstart-blue">Спасибо за внимание!</h1>
+                <div class="section-divider mt-6 mb-6 mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center z-10 my-auto">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-selfstart-orange max-w-2xl">
+                    <h2 class="text-4xl font-bold text-selfstart-blue mb-4">Давайте вместе достигать амбициозных целей.</h2>
+                    <p class="text-xl text-gray-600">Готов ответить на любые вопросы и обсудить все аспекты маркетинговой стратегии для SelfStart Global.</p>
+                </div>
+            </div>
+
+            <div class="z-10 flex items-center justify-center">
+                <div class="bg-selfstart-blue text-white p-6 rounded-lg shadow-lg flex items-center">
+                    <div class="bg-white rounded-full p-4 mr-6"><i class="fas fa-user text-selfstart-blue text-4xl"></i></div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Александр Сухомлин</h3>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center"><i class="fas fa-phone-alt mr-3"></i><span>+38 063 631-23-45</span></div>
+                            <div class="flex items-center"><i class="fab fa-telegram-plane mr-3"></i><span>Telegram, Viber, WhatsApp</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 w-full h-4 bg-selfstart-blue"></div>
+            <div class="page-number">11 / 11</div>
+        </div>
+    </div>
+
+</body>
+</html>
